@@ -1,0 +1,21 @@
+{
+  "apiVersion": "pmcro.dev/v1",
+  "kind": "agent.index",
+  "agent": "filesystem-agent",
+  "entries": [
+    {
+      "route": "@filesystem-agent /filesystem:list",
+      "plugin": "filesystem",
+      "skill": "list",
+      "description": "List entry names in one directory inside the granted workspace. Use for a filesystem catalog listing.",
+      "path": ".pmcro/plugins/filesystem/skills/list"
+    },
+    {
+      "route": "@filesystem-agent /filesystem:read",
+      "plugin": "filesystem",
+      "skill": "read",
+      "description": "Read one text file inside the granted workspace, capped at 4096 bytes. Use for a filesystem read.",
+      "path": ".pmcro/plugins/filesystem/skills/read"
+    }
+  ]
+}

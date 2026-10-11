@@ -1,0 +1,16 @@
+{
+  "name": "filesystem-agent",
+  "owner": {
+    "name": "pmcr-o"
+  },
+  "metadata": {
+    "description": "Filesystem domain agent with workspace-confined list/read behavior."
+  },
+  "plugins": [
+    {
+      "name": "filesystem",
+      "source": "./.pmcro/plugins/filesystem",
+      "description": "filesystem capabilities owned by filesystem-agent"
+    }
+  ]
+}

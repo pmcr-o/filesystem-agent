@@ -1,0 +1,18 @@
+{
+  "apiVersion": "pmcro.dev/v1",
+  "kind": "agent.catalog",
+  "id": "filesystem-agent",
+  "authority": "read-only discovery; execution requires route + grant + runtime",
+  "skills": [
+    {
+      "id": "list",
+      "plugin": "filesystem",
+      "description": "List entry names in one directory inside the granted workspace. Use for a filesystem catalog listing."
+    },
+    {
+      "id": "read",
+      "plugin": "filesystem",
+      "description": "Read one text file inside the granted workspace, capped at 4096 bytes. Use for a filesystem read."
+    }
+  ]
+}

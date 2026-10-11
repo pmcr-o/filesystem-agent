@@ -1,0 +1,16 @@
+{
+  "schema": "dotagents.manifest/v1",
+  "name": "filesystem-agent",
+  "owner": "pmcr-o",
+  "description": "Filesystem domain agent with workspace-confined list/read behavior.",
+  "invocationField": "plugin",
+  "plugins": [
+    {
+      "name": "filesystem",
+      "source": "./.pmcro/plugins/filesystem",
+      "description": "filesystem capabilities owned by filesystem-agent"
+    }
+  ],
+  "canonical": ".pmcro",
+  "projection": ".agents"
+}
