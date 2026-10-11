@@ -1,0 +1,21 @@
+{
+  "schema": "pmcro.capability-catalog.v1",
+  "plugin": "filesystem",
+  "executionRule": "registered AND runtime-present AND authorized",
+  "capabilities": [
+    {
+      "id": "filesystem:list",
+      "executable": true
+    },
+    {
+      "id": "filesystem:read",
+      "executable": true
+    }
+  ],
+  "missing": [
+    {
+      "id": "filesystem:write",
+      "reason": "not generated in this increment"
+    }
+  ]
+}

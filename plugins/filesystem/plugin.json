@@ -1,0 +1,8 @@
+{
+  "name": "filesystem",
+  "version": "0.1.0",
+  "description": "List and read inside a granted workspace.",
+  "skills": [
+    "./skills/"
+  ]
+}
